@@ -1,4 +1,4 @@
-import { View,Text } from "react-native";
+import { View, Text } from "react-native";
 
 export default function App() {
   return <View style={{
@@ -13,7 +13,16 @@ export default function App() {
       height:200,
       backgroundColor: "lightblue"
     }}
-    ></View>
+    >
+     <Text 
+     style={{
+      textAlign: "center",
+      paddingTop: "50%"
+     }}
+     >
+      <Text style={{color: "red"}}>Hello</Text> word
+      </Text>
+    </View>
      <View 
     style={{
       width:200,
