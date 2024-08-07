@@ -7,14 +7,13 @@ import Greet from "./components/Greet";
 
 export default function App() {
 
+  const names = ["Jesus","Rogert"]
+
   return (
     <View style={{ flex: 1, backgroundColor: 'white', padding: 60 }}>
-    <Greet name="Jesus" />
-    <Greet name="Rogert" />
-    <Greet name="Samuel" />
-    <Greet name="Edilma" />
-    <Greet name="Renata" />
-    <Greet name="Romina" />
+      {names.map((data,i)=>(
+          <Greet key={i} name={data} />
+      ))}
     </View>
   );
 }
